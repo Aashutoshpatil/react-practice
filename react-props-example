@@ -21,3 +21,34 @@ function App() {
 }
 
 export default App;
+
+
+
+
+props second example
+
+import React from "react";
+
+function Product(props) {
+  return (
+    <div>
+      <h2>Product: {props.name}</h2>
+      <p>Price: ₹{props.price}</p>
+      <hr />
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <h1>Product List</h1>
+
+      <Product name="Laptop" price="50000" />
+      <Product name="Mobile" price="20000" />
+      <Product name="Headphones" price="3000" />
+    </div>
+  );
+}
+
+export default App;
